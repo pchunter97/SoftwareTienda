@@ -6,11 +6,11 @@
 package Controladores;
 
 import Modelos.Producto;
-import Modelos.ProductoDAO;
+import Metodos.ProductoDAO;
 import Modelos.Usuario;
-import Modelos.UsuarioDAO;
+import Metodos.UsuarioDAO;
 import Modelos.Venta;
-import Modelos.VentaDAO;
+import Metodos.VentaDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.NumberFormat;

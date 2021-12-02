@@ -3,9 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelos;
+package Metodos;
 
 import Config.Conexion;
+import Modelos.Venta;
+import Modelos.Venta;
+import Modelos.Venta;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -44,7 +47,8 @@ public class VentaDAO {
 
     }
 
-        public void RegistrarVenta(Venta venta){
+        public boolean RegistrarVenta(Venta venta){
+            boolean valid=true;
          String sentencia = "INSERT INTO ventas (idclienteventa,idempleadoventa,numerofactura,fechaventa,totalventa,estado) VALUES(?,?,?,?,?,?)";
         con = cn.Conexion();
         try {
@@ -59,11 +63,14 @@ public class VentaDAO {
            
         } catch (SQLException ex) {
             Logger.getLogger(VentaDAO.class.getName()).log(Level.SEVERE, null, ex);
+            valid=false;
+            System.out.println("ESTA ERROR DEL SQL");
         }
-        
+        return valid;
     }
     
-    public void GuardarDetalleVenta(Venta venta){
+    public boolean GuardarDetalleVenta(Venta venta){
+        boolean status=true;
           String sentencia = "INSERT INTO detalleventa (idventa,idproducto,cantidadproducto,precioventa) VALUES(?,?,?,?)";
         con = cn.Conexion();
         try {
@@ -77,7 +84,9 @@ public class VentaDAO {
            
         } catch (SQLException ex) {
             Logger.getLogger(VentaDAO.class.getName()).log(Level.SEVERE, null, ex);
+            status=false;
         }
+        return status;
     }
     
      public int ObtenerMaximoIdVentas(){

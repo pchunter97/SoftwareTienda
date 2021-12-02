@@ -6,7 +6,7 @@
 package Controladores;
 
 import Modelos.Usuario;
-import Modelos.UsuarioDAO;
+import Metodos.UsuarioDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;

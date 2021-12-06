@@ -165,8 +165,8 @@ public class UsuarioDAO {
         return r;
     }
 
-    public void Eliminar(int id) {
-
+    public boolean Eliminar(int id) {
+        boolean result=true;
         String sql = "DELETE FROM usuarios WHERE id=" + id;
         con = cn.Conexion();
         try {
@@ -174,7 +174,10 @@ public class UsuarioDAO {
             ps.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(UsuarioDAO.class.getName()).log(Level.SEVERE, null, ex);
+            result=false;
         }
+        
+       return result;
 
     }
 

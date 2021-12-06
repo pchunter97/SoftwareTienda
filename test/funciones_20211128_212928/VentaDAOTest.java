@@ -100,7 +100,7 @@ public class VentaDAOTest {
         result = false;
         }
         Boolean res = false;
-        if (result == false) {
+        if (result != false) {
             res = true;
         } else {
             res = false;

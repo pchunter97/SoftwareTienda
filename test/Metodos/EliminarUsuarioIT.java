@@ -6,6 +6,7 @@
 package Metodos;
 
 import Config.Conexion;
+import Modelos.Producto;
 import Modelos.Usuario;
 import java.sql.Connection;
 import java.util.List;
@@ -21,11 +22,14 @@ import org.mockito.Mockito;
  *
  * @author Jeffield
  */
-public class UsuarioDAOIT {
+public class EliminarUsuarioIT {
     
     Conexion conexionMock;
     Connection con;
-    public UsuarioDAOIT() {
+    
+    UsuarioDAO usuarioDAO;
+    List<Usuario> usuarios;
+    public EliminarUsuarioIT() {
     }
     
     @BeforeClass
@@ -38,6 +42,9 @@ public class UsuarioDAOIT {
     
     @Before
     public void setUp() {
+        
+        
+                
         conexionMock= Mockito.mock(Conexion.class);
         try{
             Mockito.when(conexionMock.Conexion()).thenReturn(con);
@@ -46,10 +53,16 @@ public class UsuarioDAOIT {
         {
             System.out.println(e.getMessage());
         }
+        
+        usuarioDAO=Mockito.mock(UsuarioDAO.class);
+        Mockito.when(usuarioDAO.Listar()).thenReturn(usuarios);
+        
+        
     }
     
     @After
     public void tearDown() {
+        Mockito.when(usuarioDAO.Listar()).thenReturn(usuarios);
     }
 
     /**

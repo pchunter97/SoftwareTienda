@@ -187,3 +187,7 @@ UsuarioDAO Agregar,54
 UsuarioDAO Validar,72
 UsuarioDAO Listar,24
 UsuarioDAO ListarPorId,11
+ProductoDAO Agregar,347
+UsuarioDAO Validar,374
+ProductoDAO Agregar,304
+UsuarioDAO Validar,334

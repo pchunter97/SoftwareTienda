@@ -182,3 +182,8 @@ UsuarioDAO Agregar,18
 UsuarioDAO Validar,19
 UsuarioDAO Listar,14
 UsuarioDAO ListarPorId,12
+UsuarioDAO BuscarCliente,353
+UsuarioDAO Agregar,54
+UsuarioDAO Validar,72
+UsuarioDAO Listar,24
+UsuarioDAO ListarPorId,11

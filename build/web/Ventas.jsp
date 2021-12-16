@@ -27,11 +27,11 @@
                         <form method="post" action="Controlador?menu=Ventas">
                             <div class="row">
                                 <div class="col-md-4 d-flex">
-                                    <input type="number" name="documentocliente" class="form-control" placeholder="documento cliente" value="${cliente.getDocumento()}">
+                                    <input width="200px" 300px required type="number" name="documentocliente" class="form-control" placeholder="documento cliente" value="${cliente.getDocumento()}">
                                     <input type="submit" name="accion" value="BuscarCliente" class="btn btn-outline-dark">
                                 </div>
                                 <div class="col-md-8 d-flex">
-                                    <input type="text" name="nombrecliente" class="form-control" placeholder="Nombre cliente" value="${cliente.getNombre()}">
+                                    <input  type="text" name="nombrecliente" class="form-control" placeholder="Nombre cliente" value="${cliente.getNombre()}">
                                 </div>
                             </div>
                             <div class="row"></div>
@@ -45,17 +45,17 @@
                         <form action="Controlador?menu=Ventas" method="post">
                             <div class="row">
                                 <div class="col-md-4 d-flex form-group">
-                                    <input type="number" name="codigoproducto" class="form-control" placeholder="Codigo Producto" value="${productoseleccionado.getCodigo()}">
+                                    <input required type="number" name="codigoproducto" class="form-control" placeholder="Codigo Producto" value="${productoseleccionado.getCodigo()}">
                                     <input type="submit" name="accion" value="BuscarProducto" class="btn btn-outline-dark">
                                 </div>
                                 <div class="col-md-8 d-flex form-group">
-                                    <input type="text" name="nombreproducto" class="form-control" placeholder="Nombre Producto" value="${productoseleccionado.getNombreProducto()}">
+                                    <input  required type="text" name="nombreproducto" class="form-control" placeholder="Nombre Producto" value="${productoseleccionado.getNombreProducto()}">
                                 </div>
                                 <div class="col-md-4 d-flex form-group">
-                                    <input type="text" name="precioproducto" class="form-control" placeholder="$ 0000.00" value="${productoseleccionado.getPrecio()}">
+                                    <input required type="text" name="precioproducto" class="form-control" placeholder="$ 0000.00" value="${productoseleccionado.getPrecio()}">
                                 </div>
                                 <div class="col-md-8 d-flex form-group">
-                                    <input type="number" value="1" name="cantidadproducto" class="form-control" placeholder="Cantidad">
+                                    <input required type="number" value="1" name="cantidadproducto" class="form-control" placeholder="Cantidad">
                                 </div>
                             </div>
                             <input type="submit" name="accion" value="AgregarProducto" class="btn btn-outline-primary col text-center">
@@ -70,7 +70,7 @@
                     <div class="card-header">
                         <div class="form-group row">
                              <label class="col-sm-2 col-form-label">Numero de factura</label>
-                             <input class="form-control col-md-4" type="text" name="txtnumerofactura" value="${numerofactura}">
+                             <input required class="form-control col-md-4" type="text" name="txtnumerofactura" value="${numerofactura}">
                         </div>
                        
                     </div>
@@ -114,7 +114,7 @@
                           
                         </div>
                         <div class="col-md-4">
-                            <input type=text" name="txttotalapagar" class="form-control" placeholder="$ 00.000.00" disabled="disabled" value="${totalapagar}">
+                            <input required type=text" name="txttotalapagar" class="form-control" placeholder="$ 00.000.00" disabled="disabled" value="${totalapagar}">
                          </div>
                     </div>
                     

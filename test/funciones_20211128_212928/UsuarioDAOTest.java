@@ -66,8 +66,8 @@ public class UsuarioDAOTest {
         String metodo = "Validar";
         String clase = "UsuarioDAO";
         Date vinicio = new Date();
-      int param1 = 3;
-      String param2 = "";
+      int param1 = 1075212819;
+      String param2 = "123";
         Boolean expResult = true;
         UsuarioDAO UsuarioDAO_instance = new UsuarioDAO();
         Usuario result = new Usuario();

@@ -17,20 +17,20 @@
             <div class="col-md-3">
                 <form action="Controlador?menu=Productos" method="POST">
                     <div class="form-group">
-                        <label>Nombre de producto</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" name="txtNombreProducto" value="${producto.getNombreProducto()}">
+                        <label >Nombre de producto</label>
+                        <input required type="text" class="form-control" id="exampleInputPassword1" name="txtNombreProducto" value="${producto.getNombreProducto()}">
                     </div>
                     <div class="form-group">
                         <label>Descripcion producto</label>
-                        <input type="text" class="form-control" name="txtDescripcion" value="${producto.getDescripcion()}">
+                        <input required type="text" class="form-control" name="txtDescripcion" value="${producto.getDescripcion()}">
                     </div>
                     <div class="form-group">
                         <label>Unidad</label>
-                        <input type="text" class="form-control" name="txtUnidad" value="${producto.getUnidad()}">
+                        <input required type="text" class="form-control" name="txtUnidad" value="${producto.getUnidad()}">
                     </div>
                     <div class="form-group">
                         <label>Precio</label>
-                        <input type="text" class="form-control" name="txtPrecio" value="${producto.getPrecio()}">
+                        <input required type="text" class="form-control" name="txtPrecio" value="${producto.getPrecio()}">
                     </div>
 
 

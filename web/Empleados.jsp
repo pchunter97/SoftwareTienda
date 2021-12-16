@@ -21,20 +21,20 @@
                         <form action="Controlador?menu=Empleados" method="POST">
                             <div class="form-group">
                                 <label>Documento</label>
-                                <input type="number" class="form-control" name="txtdocumento" value="${usuarioSeleccionado.getDocumento()}">
+                                <input required type="number" class="form-control" name="txtdocumento" value="${usuarioSeleccionado.getDocumento()}">
                                 <small class="form-text text-muted">Ingrese El No de documento sin espacios ni caracteres especiales</small>
                             </div>
                             <div class="form-group">
                                 <label>Nombre</label>
-                                <input type="text" class="form-control" name="txtnombre" value="${usuarioSeleccionado.getNombre()}">
+                                <input required type="text" class="form-control" name="txtnombre" value="${usuarioSeleccionado.getNombre()}">
                             </div>
                             <div class="form-group">
                                 <label>Correo</label>
-                                <input type="text" class="form-control" name="txtcorreo" value="${usuarioSeleccionado.getCorreo()}">
+                                <input required type="text" class="form-control" name="txtcorreo" value="${usuarioSeleccionado.getCorreo()}">
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="text" class="form-control" name="txtpassword" value="${usuarioSeleccionado.getPassword()}">
+                                <input required type="text" class="form-control" name="txtpassword" value="${usuarioSeleccionado.getPassword()}">
                             </div>
                             <div class="form-group">
                                 <label>Rol</label>

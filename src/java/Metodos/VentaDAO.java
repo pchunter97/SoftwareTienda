@@ -28,7 +28,7 @@ public class VentaDAO {
     Conexion cn = new Conexion();
     
     public String ObtenerNumeroDeFactura() {
-        String numerodefactura ="";
+        String numerodefactura ="44";
         String consulta = "SELECT MAX(numerofactura) FROM ventas";
         con = cn.Conexion();
 
@@ -37,7 +37,7 @@ public class VentaDAO {
             rs = ps.executeQuery();
             while (rs.next()) {
                 numerodefactura = rs.getString(1);
-                System.err.println("numfac"+numerodefactura);
+                //System.err.println("numfac"+numerodefactura);
             }
         } catch (SQLException ex) {
             Logger.getLogger(VentaDAO.class.getName()).log(Level.SEVERE, null, ex);

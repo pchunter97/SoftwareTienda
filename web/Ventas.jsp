@@ -49,10 +49,10 @@
                                     <input type="submit" name="accion" value="BuscarProducto" class="btn btn-outline-dark">
                                 </div>
                                 <div class="col-md-8 d-flex form-group">
-                                    <input  required type="text" name="nombreproducto" class="form-control" placeholder="Nombre Producto" value="${productoseleccionado.getNombreProducto()}">
+                                    <input   type="text" name="nombreproducto" class="form-control" placeholder="Nombre Producto" value="${productoseleccionado.getNombreProducto()}">
                                 </div>
                                 <div class="col-md-4 d-flex form-group">
-                                    <input required type="text" name="precioproducto" class="form-control" placeholder="$ 0000.00" value="${productoseleccionado.getPrecio()}">
+                                    <input  type="text" name="precioproducto" class="form-control" placeholder="$ 0000.00" value="${productoseleccionado.getPrecio()}">
                                 </div>
                                 <div class="col-md-8 d-flex form-group">
                                     <input required type="number" value="1" name="cantidadproducto" class="form-control" placeholder="Cantidad">

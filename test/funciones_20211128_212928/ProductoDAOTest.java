@@ -110,4 +110,27 @@ public class ProductoDAOTest {
         Date vfinal = new Date();
         long duracion = Util.DiferenciaFechas(vinicio, vfinal);
         Util.exportar(clase, metodo, duracion);
-    }}
+    }
+
+@Test
+    public void testEliminar() {
+        System.out.println("Eliminar");
+        int id = 26;
+        ProductoDAO instance = new ProductoDAO();
+        boolean expResult=true;
+        boolean result = instance.Eliminar(id);
+        boolean res=false;
+        if(result)
+        {
+            res=true;
+        }
+        else
+        {
+            res=false;
+        }
+        assertEquals(expResult, res);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+}

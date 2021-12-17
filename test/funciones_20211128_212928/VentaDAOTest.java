@@ -42,7 +42,7 @@ public class VentaDAOTest {
         Date vinicio = new Date();
         Boolean expResult = true;
         VentaDAO VentaDAO_instance = new VentaDAO();
-        String result = "44";
+        String result = "45";
         try {
             result = VentaDAO_instance.ObtenerNumeroDeFactura();
         } catch (Exception e) {

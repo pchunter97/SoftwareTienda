@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author AdminSena
  */
-@WebServlet(name = "Controlador", urlPatterns = {"/Controlador"})
+@WebServlet(name = "Controlador", urlPatterns = { "/Controlador" })
 public class Controlador extends HttpServlet {
 
     Usuario usuario = new Usuario();
@@ -35,7 +35,7 @@ public class Controlador extends HttpServlet {
     Producto producto = new Producto();
     ProductoDAO productoDAO = new ProductoDAO();
     Venta venta = new Venta();
-    int item, codProducto, precio, cantidad;
+    int item, codProducto, precio, cantidad,idProducto;
     String descripcion;
     double subtotal, totalapagar = 0;
     List<Venta> listaVentas = new ArrayList();
@@ -48,10 +48,10 @@ public class Controlador extends HttpServlet {
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -82,6 +82,9 @@ public class Controlador extends HttpServlet {
 
                     break;
                 case "Eliminar":
+                    idProducto = Integer.parseInt(request.getParameter("id"));
+                    productoDAO.Eliminar(idProducto);
+                    request.getRequestDispatcher("Controlador?menu=Productos&accion=Listar").forward(request, response);
 
                     break;
                 case "Actualizar":
@@ -212,7 +215,7 @@ public class Controlador extends HttpServlet {
                     total1 = formatoNumero1.format(totalapagar);
                     request.setAttribute("totalapagar", total1);
                     break;
-                    
+
                 case "GenerarVenta":
                     venta.setIdCliente(usuario.getId());
                     venta.setIdEmpleado(1);
@@ -250,14 +253,15 @@ public class Controlador extends HttpServlet {
 
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the
+    // + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -268,10 +272,10 @@ public class Controlador extends HttpServlet {
     /**
      * Handles the HTTP <code>POST</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

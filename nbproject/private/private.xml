@@ -2,6 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/SuiteDePruebas/TestSuite.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/src/java/Metodos/UsuarioDAO.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/TestIT/AgregarProductoIT.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/TestIT/RegistrarUsuarioIT.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/funciones_20211128_212928/UsuarioDAOTest.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/src/java/Metodos/ProductoDAO.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/web/Productos.jsp</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/src/java/Controladores/Controlador.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/funciones_20211128_212928/ProductoDAOTest.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/web/Empleados.jsp</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/Modelos/ProductoTest.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/TestIT/ModificarProductoIT.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/SuiteDePruebas/TestRunner.java</file>
+            <file>file:/C:/Users/Jeffield/Desktop/SoftwareTienda/test/TestIT/EliminarUsuarioIT.java</file>
+        </group>
     </open-files>
 </project-private>

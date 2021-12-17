@@ -87,12 +87,26 @@ public class ProductoDAO {
                 producto.setUnidad(rs.getString("unidad"));
                 producto.setPrecio(rs.getString("precio"));
                 lista.add(producto);
-
             }
         } catch (SQLException ex) {
             Logger.getLogger(UsuarioDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         return lista;
+    }
+    
+     public boolean Eliminar(int id) {
+        boolean result=true;
+        String sql = "DELETE FROM productos WHERE id=" + id;
+        con = cn.Conexion();
+        try {
+            ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(UsuarioDAO.class.getName()).log(Level.SEVERE, null, ex);
+            result=false;
+        }
+        
+       return result;
 
     }
 

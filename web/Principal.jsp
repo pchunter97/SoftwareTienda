@@ -29,9 +29,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Controlador?menu=Empleados&accion=Listar" target="miContenedor">Empleados</a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="Controlador?menu=Clientes" target="miContenedor">Clientes</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="Controlador?menu=Ventas&accion=default" target="miContenedor">Ventas</a>
                     </li>
@@ -55,8 +55,9 @@
 
         <div class="m-3" style="height:900px;">
             <iframe name="miContenedor" style="height:100%; width:100%;" frameBorder="1"></iframe>
+            
         </div>
-
+        <h6>Copyright ©SOX 2020 - 2020</h6>          
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

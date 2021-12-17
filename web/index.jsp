@@ -19,12 +19,12 @@
                 <form method="POST" action="Validar">
                     <div class="form-group">
                         <label>No de Documento</label>
-                        <input type="text" class="form-control" name="txtusuario">
+                        <input required type="text" class="form-control" name="txtusuario">
                         <small id="emailHelp" class="form-text text-muted">Ingrese su documento sin espacios ni puntos</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" name="txtpassword">
+                        <input required type="password" class="form-control" id="exampleInputPassword1" name="txtpassword">
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
